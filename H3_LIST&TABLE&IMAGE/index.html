@@ -9,11 +9,16 @@
 </head>
 
 <body>
+    <!-- if image nhi dikh rhi to uske jgh alt dikhega jo user ko bta dega ki kiski image hai -->
     <img width="300" height="300" src="image.png" alt="TRAIN IMAGE">
+
+    <!-- br tag line break ka kam krti h...image ke bad line break aagyi -->
     <br>
 
     <table>
-        <caption>***NEW TRAIN DETAILS***</caption>
+        <caption style="background-color: thistle;">***NEW TRAIN DETAILS***</caption>
+
+        <!-- th means table heading,tr is table row,td is table data -->
         <thead>
             <tr>
                 <th>NAME</th>
@@ -21,13 +26,15 @@
                 <th>MANUFACTURER</th>
             </tr>
         </thead>
+        <!-- tbody is table body -->
         <tbody>
             <tr>
                 <td>SIGMA EXPRESS</td>
                 <td> ~LIGHT </td>
-                <td>HARRY BHAI</td>
+                <td>SHREYASH BHAI</td>
             </tr>
             <tr>
+                <!-- colspan="2" means 2 columns ki jgh occupy krega lly rowspan -->
                 <td colspan="2">SIGMA OP</td>
                 <td rowspan="2">SHREYASH OP</td>
             </tr>
@@ -35,9 +42,11 @@
                 <td colspan="2">WEB DEV OP</td>
             </tr>
         </tbody>
+        <!-- tfoot is table footer -->
         <tfoot>
             <tr>
                 <td colspan="2">EARTH</td>
+                <!-- rowspan="2" will only work if there are 2 rows to span -->
                 <td rowspan="2">FOOT</td>
             </tr>
         </tfoot>
