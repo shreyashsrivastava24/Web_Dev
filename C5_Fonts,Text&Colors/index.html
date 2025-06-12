@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fonts</title>
     <style>
         /* google fonts ka use krne k liye import(style tag me) ya to link (head tag me) add krna pdta and its always recommended to add all req fonts from google fonts in one go*/
         @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Cherry+Cream+Soda&display=swap');
@@ -15,17 +15,36 @@
             font-family: 'Cherry Cream Soda', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
             font-size: 40px;
             color: rgb(35, 30, 67);
+            
         }
 
         p {
             /*google font se lake copy paste kr diya font ko font family me */
             font-family: "Baloo 2", sans-serif;
-            font-size: 50px;
+            font-size: 34px;
             font-weight: 600;
             color: red;
-            /* font-style: italic; */
+            /* line-height: 2;--->lines ki height k liye*/
+            /*letter-spacing: 10px;--->letters k beech spacing control */
             /* font-weight: 500;  ---> font wt se bold kr skte*/
             /* text-decoration: underline; or overline;*/
+        }
+        h2{
+            /* text transform se hm text ka first letter capitalize,text ko uppercase ya lowercase */
+            text-align: center;
+            text-transform: capitalize;
+            text-decoration: underline;
+            text-decoration-color: rgb(81, 4, 246);
+            /* text-decoration-style: dotted; */
+            text-decoration-thickness: 8px;
+            /* text-indent:25px;---> iss se indent aa jata hai */
+        }
+        .lorem{
+            border: 2px solid red;
+            width: 864px;
+            /* text-overflow: ellipsis;
+            overflow: hidden; */
+            word-break: break-all;
         }
     </style>
 </head>
@@ -33,7 +52,9 @@
 <body>
     <div>
         <h1>Fonts</h1>
+        <h2>about Fonts</h2>
         <p>This is a video on fonts</p>
+        <p class="lorem">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur id alias exercitationem, beatae eos odit quibusdam! Sit maiores rem voluptatum pariatur. Nostrum ratione ad sequi repellendus eveniet numquam assumenda dolorem minus dignissimos! Sunt qui unde fugiat quod delectus, voluptates provident eum impedit, commodi aspernatur quasi!</p>
     </div>
 </body>
 
