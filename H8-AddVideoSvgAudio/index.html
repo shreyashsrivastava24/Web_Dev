@@ -1,3 +1,4 @@
+<!-- audio,video,svg inline elem hai isliye ek line me dikh rhe -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,21 +10,26 @@
 
 <body>
     <h1>TESTING IMG VID</h1>
+
+    <!-- Video tag k kuch attributes like control jo vdo me control deta,src se koi v video ka link dal skte yani jruri nhi ki file laptop me ho,controls k baad space de k agr autoplay on kr du to video autoplay,space de k loop then video bar chlega apne se,muted to mute video, poster se video k upr poster aa jati hai jispe click krne pe video play -->
     <video src="video.mp4" height="300" controls loop poster="download.jpeg"></video>
 
+    <!-- Audio tag me controls nhi likhne pe audio n dikhegi,isme v autoplay,loop,muted...is se audio mute rhegi jb tk user unmute n kre -->
     <audio src="darkside_neoni.mp3" controls autoplay loop muted></audio>
 
+    <!-- PROBLEM:SVG ko alg se file bna k add krne k liye svg tag  me xmlns="http://www.w3.org/2000/svg" likhna pdta hai...source stackoverflow -->
     <svg height="100" width="100">
         <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
         <img src="img.svg" alt="My SVG Image">
-
-        <iframe width="560" height="315"
-            src="https://www.youtube.com/embed/XZwBNDGuWGU?si=02AToxD7Q1hl8Gvy&amp;start=635"
-            title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        <iframe src="https://www.codewithharry.com/tutorial/html-iframes" width="1000" height="444"></iframe>
     </svg>
+
+    <!-- iframe se kisi v website ko embed kr skte,yt me share option me embed me iframe code milta  -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/XZwBNDGuWGU?si=02AToxD7Q1hl8Gvy&amp;start=635"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe src="https://www.codewithharry.com/tutorial/html-iframes" width="1000" height="444"></iframe>
+
 </body>
 
 </html>
