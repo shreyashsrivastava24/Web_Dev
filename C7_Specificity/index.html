@@ -1,0 +1,73 @@
+<!-- INTERVIEW : CASCADE ALGORITHM
+
+Specificity Calculation:
+To calculate specificity, assign a value to each part of the selector:
+Universal Selector. 0
+Element selectors and pseudo-elements: 1
+Class selectors, attribute selectors, and pseudo-classes: 10
+ID selectors: 100 
+Inline styles: 1000-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 1)Agr same trh ka selector hai (like id selector,class selctor,element selector etc) ya same specificty(highest walo ki) to niche wala lagu hoga i.e purple but jhga pr selector ka dhang bdl jata hai,not of same type, wha pe specificity use hoti 
+              2)Agr mai h1 me style attribute (style="color: burlywood) use kr du to css ko dekhega v nhi bcoz style ki priority jada hai" 
+              3)Specificity order: inline style>id sel>class or attribute selector>element selector>universal selector jo * hai
+              4)Try to use low priority wala so that we can overwrite 
+              5)Origin: User agent stylesheet = Browser ki default CSS...jb hmnne koi stylesheet nhi lgai tb by default ye lgta...but agr hmne lga diya nto wo overwrite kr denge user agent nstyle sheet ko
+              6) !important jha pe lga diya wo to inline ko overwrite kr dega,isko lagu krna hi pdega css ko-->
+    <style>
+        /* specificity of this selector is 1 */
+        h1 {
+            color: violet;
+        }
+
+        /* specificity of this selector is 10 */
+        .yellow {
+            color: yellow;
+        }
+
+        /* now iski specificity is 1(due to h1)+10(due to .yellow)=11 */
+        h1.yellow {
+            color: yellow;
+        }
+
+        /* specificity of this selector is 10 */
+        .cred {
+            /* color: red !important; */
+            color: red;
+        }
+
+        /* specificity of this selector is 10 */
+        .cpurple {
+            color: purple;
+        }
+
+        /* specificity of this selector is 10 */
+        /* ye attribute selector hai */
+        [data-x=a] {
+            color: maroon;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <!-- data-x="a" atrribute selctor use krne k liye likha hai -->
+        <h1 class="yellow cred cpurple" data-x="a">CSS Specificity</h1>
+    </div>
+</body>
+
+</html>
+
+<!-- Question)Find Specificty:
+     a.harryclass.rohan-class[href]:hover {
+     color: blueviolet
+    
+    Ans)1+10+10+10(attribute selector)+10(pseudo class)=41
+} -->

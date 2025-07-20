@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display Property</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            border: 2px solid blue;
+            /* display inline se maine iski display property change kr di ,inline bna diya */
+            /* display: inline; */
+
+            /* but padding and margin top se nhi lgegi kyuki inline hai...is behaviour ko thik kr skte inline block in display*/
+            /* inline block ka use krna pdega agr aap chahte ho ki width and margin ache trh se obey ho */
+            display: inline-block;
+            padding: 45px;
+            margin: 34px;
+            width: 344px;
+        }
+
+        .box1 {
+            /* display none ne wo box v gayab kr diya and space v gayab kr diya jo ye le rha tha
+            display: none; */
+
+            /* visibility hidden se space rh jati but box gayab */
+            /* visibility: hidden; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box box1">
+        I am a box
+    </div>
+    <div class="box">
+        who are you
+    </div>
+
+    <span>
+        I am a Good
+    </span>
+    <span>boy</span>
+</body>
+
+</html>

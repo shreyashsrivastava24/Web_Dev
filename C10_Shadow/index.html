@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadow</title>
+    <style>
+        .box {
+            border: 2px solid black;
+            padding: 34px;
+            /* box-shadow: h-offset v-offset blur spread color inset; */
+            box-shadow: 5px 5px 15px 5px #1445e8;
+        }
+
+        .text-element {
+            /* text-shadow: h-offset v-offset blur color; */
+            text-shadow: 6px 5px 14px #0ea2ec;
+
+            /* outlines are different from borders because they are not part of the box model hence space nhi legi,border andr hoga outline bahr,outline offset property se outlines k beech duri inc dec kr skte but border me directly aisa nhi kr skte, outline ki width change nhi kr skte but border ki kr skte, outline border radius ko follow krti aap directly outline ko curvy nhi kr kr skte  */
+            outline: 2px solid black;
+            border: 2px solid rgb(112, 30, 245);
+            outline-offset: 5px;
+            border-radius: 3px;
+        }
+
+        /* PRO TIP: use inspect in browser to adjust accordingly and then do changes here */
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        I am a box
+    </div>
+
+    <p class="text-element">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim quisquam unde accusamus necessitatibus ipsum harum
+        consectetur quo nam quasi sed autem molestias magnam beatae aliquam, iure, illo cupiditate exercitationem
+        delectus tempora? Doloribus repellat modi deserunt maiores esse quisquam fuga dolor voluptate, natus commodi ad
+        odit?
+    </p>
+</body>
+
+</html>

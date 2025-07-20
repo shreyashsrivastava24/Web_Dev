@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* universal selector */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* html root element hai */
+        html {
+            font-size: 12px;
+        }
+
+        .box {
+            /* box sizing border box ka use krne se padding aur border ,box k andr count hote hain */
+            box-sizing: border-box;
+            border: 2px solid black;
+
+            /* width: 2048px; ......is se ek prblm hai agr kisi choti screen pe dekhe to ek horizontal scroll bar aa jayega, code ft jayega */
+
+            /* ye viewport k according adjust ho jata....80vw = 80 percent of viewport width*/
+            width: 80vw;
+            /* 10vh means 10 percent of viewport height */
+            height: 10vh;
+            background-color: aquamarine;
+            /* margin auto krne se left right margin automatically lg jata and div auto center,but sirf blockline elements centre inlilne wale centre nhi honge */
+            margin: auto;
+        }
+
+        .container {
+            box-sizing: border-box;
+            border: 2px solid black;
+            /* width: 2048px; */
+            width: 80vw;
+            /* height: 80vh; */
+            /* min height set kr diya max kuch v poss...container will adjust according o the content but min height will be maintained max kuxh v ho skta depending on content */
+            min-height: 80vh;
+            background-color: aquamarine;
+            /* ye 23px margin top hai and auto mtlb left right se auto margin hai*/
+            margin: 23px auto;
+            font-size: 18px;
+        }
+
+        /* > isliye lgaya so that immediate child pe efect lge */
+        .container>div {
+            /* em se jo font size ye container se inherit krne wala tha uska x times ho jata means jitna hona chiye uska x times */
+            font-size: 2em;
+            /* rem lgane se 2 times of root element ho jayega font size
+            font-size: 2rem; */
+
+            border: 2px solid red;
+            /* width 50 percent means 50 percent of parents width */
+            width: 50%;
+        }
+
+        .container>div>div {
+            border: 2px solid blue;
+            width: 50%;
+        }
+
+        .mycont {
+            box-sizing: border-box;
+            border: 2px solid black;
+            color: black;
+            margin: 23px auto;
+            font-size: 22px;
+            /* 100vmin means 100 percent of min(width,height)...lly max me maximum */
+            /* width: 100vmin; */
+            width: 80vw;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        This is a box
+    </div>
+    <div class="container">
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore quam earum, architecto corrupti harum iure
+            eos
+            officia minima assumenda quas modi repellat vero dolores magnam voluptatum sint ab deserunt itaque nesciunt
+            eaque accusamus! Nulla delectus consequuntur dolores, laborum dicta ratione atque ut incidunt voluptatem ex,
+            vero beatae esse rem voluptate tempore et ab natus. Iste, commodi.p
+            <div>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia ad cum distinctio laborum architecto
+                quo esse tempora sapiente, labore, saepe blanditiis non veniam!
+            </div>
+        </div>
+
+        <!-- lorem1000 used to see  that this container will adjust its height even after setting min height -->
+    </div>
+    <div class="mycont">
+        I am another container
+    </div>
+</body>
+
+</html>
