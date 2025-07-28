@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables</title>
+    <style>
+
+        /* root is a global variable,iska use krke hmne individually color change krne ki jgh sirf two variables se pure website ka color change kr diya */
+        :root {
+             --color: rgb(255, 152, 7);
+            --seccolor:rgb(242, 219, 45);
+            --defpad: 23px;
+            --defop: 0.5;
+        }
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            display: flex;
+            /* is se girte hue elements upr aa jate */
+        }
+        
+        /* ul k andr k li pe apply hoga */
+        ul li {
+            list-style: none;
+            padding: var(--defpad);
+            border: 2px solid var(--seccolor) ;
+            opacity: var(--defop);
+        }
+
+         ul li:first-child {
+            /* yha pe ye ek local variable hai is se hmne global variable ko overwrite kr diya */
+            --color: rgb(80, 135, 223);
+            background-color: var(--color,aqua);
+            /* var(--color,other color) if color variable doesnt exist then other color lg jayega */
+        }
+
+        .nav {
+            background-color: var(--color,green);
+        }
+        
+        .container {
+            background-color: var(--seccolor);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod animi, id voluptatum earum sed ad reiciendis sunt? Illo animi officia reiciendis quis assumenda sint alias corrupti! Sit quod at blanditiis sapiente quis! Atque pariatur, quas vero, ea, doloribus doloremque impedit quam libero fuga nemo delectus.
+    </div>
+</body>
+</html>
