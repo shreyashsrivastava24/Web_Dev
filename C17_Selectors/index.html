@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on Selectors</title>
+    <style>
+        /* .box:first-child {
+            background-color: red;
+        } */
+
+        /* .box::first-line {
+            color: rgb(255, 72, 0);
+        } */
+
+        /* .boxes *{
+            color: blue;
+            border: 2px solid black;
+        } */
+
+        /* grouping of selectors,sare a , p ,.box etc sb pe lg jayega */
+        /* p ,a ,.box, [data-color="primary"] {
+            padding-top: 45px;
+        } */
+
+        /* .box:nth-child(even) {
+            background-color: orange;
+        } */
+
+        /* niche se last-child */
+        /* .box:nth-last-child(1) {
+            background-color: red;
+        } */
+
+        /* css se element ko dynamically insert kiya ja skta...boxes ka andr main content se phle ye content dal diya */
+        .boxes::before {
+            content: "Shreyash is good";
+            color: red;
+        }
+        .boxes::after {
+            content: "Sigma course is also good";
+            color: rebeccapurple;
+        }
+        
+        /* user page me agr kuch v select krega to ye styling lgegi */
+        ::selection {
+            color: aqua;
+            background-color: blueviolet;
+        }
+
+        .box::first-letter {
+            color: peru;
+            font-size: 40px;
+        }
+
+        input::placeholder {
+            color: rgb(6, 104, 190);
+            /* font-size: 20px; */
+        }
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div data-color="primary" class="box">Hey I am the first box</div>
+        <div class="box">Hey I am a box</div>
+        <div class="box">Hey I am a box</div>
+        <input type="text" placeholder="Input ur text">
+    </div>
+</body>
+</html>
