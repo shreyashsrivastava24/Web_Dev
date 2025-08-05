@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-Box</title>
+    <style>
+        .container {
+            border: 2px solid red;
+            height: 80vh;
+
+            /* display flex ka use item pe ni container pe krte,display flex means ab aap flexbox ki poperties ka use kr skte,by default flexbox items ko left to right arrange kr deta */
+            display: flex;
+
+            /* justify content centre sbse phle dekhega flex dirn ko then flex axis k along items centre kr dega */
+            /* justify-content: center; */
+
+            /* align-items vertical alignment ke liye hota hai jab flex-direction: row default hota hai.Agar flex-direction: column kar doge, to align-items: center horizontal alignment karega. */
+            align-items: center;
+
+            /* by default flex dirn left to right we can change it as per our need like column,column reverse,row,row reverse etc.....also jis dirn me items lay ho rhe use bolte main axis and uske perpendicular cross axis*/
+            /* flex-direction: column; */
+
+            /* agr content overflow hoga to next line me wrap ho jayega */
+            flex-wrap: wrap;
+
+            /* jb ek se jyada rows or lines ho to iska use krte ...is se centre ,flexstart etc */
+            /* align-content: flex-start; */
+
+            /* there is no justify-items in flexbox; */
+
+            /* ek saath do cheeze set flex dirn and then flex wrap */
+            flex-flow: row wrap;
+
+            /* is se items k beech gap nirdharit krte */
+            /*gap: 30px;
+            row-gap: 40px;
+            column-gap: 10px;*/
+            /* phle row then col */
+            gap: 40px 10px;
+        }
+
+        .item {
+            background-color: rgb(226, 43, 214);
+            height: 92px;
+            width: 92px;
+            border: 2px solid black;
+            /* margin: 4px; */
+
+            /* flex grow by default 0 hota,isko 1 krne se hmne kha ki pura jo flexbox ki width hai usme sare items equal jgh lenge puri width ko lete hue */
+            /* flex-grow: 1; */
+        }
+
+        .order-1 {
+            /* jitna jada order wo utna baad me aayega,default order sbka 0 hai,agr same order ho to jo phle wo phle dusra uske bad */
+            order: 1;
+        }
+
+        .order-2 {
+            order: 2;
+        }
+
+        .order-3 {
+            order: 3;
+        }
+
+        .item1 {
+            /* ab ye ek item ki jgh 2 items ki jgh lega,iski value jitni jada bdhaunga ye utni jadi jgh lega,sare items ek hi row me aayenge aur ye wala item grow krega with inc in value */
+            /* flex-grow: 2; */
+
+            /* ability of a flex item to shrink if necessary...choti screen ho to ye wala item 2times tezi se shrink hoga */
+            /* flex-shrink: 2; */
+
+            /* is se sirf ye wala item flex start or flex end etc me aa jayega */
+            align-self: flex-end;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <div class="item item1">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item order-1">4</div>
+            <div class="item">5</div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <!--<div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item order-1">66</div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div> -->
+        </div>
+    </main>
+</body>
+
+</html>
