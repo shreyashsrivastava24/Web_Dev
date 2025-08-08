@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transforms</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            background-color: beige;
+            height: 50px;
+            width: 50px;
+            border: 2px solid black;
+            /* box center me likha hua nhi tha isliye */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            /* rotate kr dega by 40deg */
+            /* transform: rotate(40deg); */
+
+            /* 1 turn=360deg hence 0.5 turn se 180deg rotate */
+            /* transform: rotate(0.5turn); */
+
+            /* kisi axis k about rotate  krne k liye ,yha z k abt 9 deg rotate*/
+            /* transform: rotateZ(9deg); */
+
+            /* is se 1.5 times ho jayega */
+            /* transform: scale(1.5); */
+
+            /* is se sirf y me 1.3 times ho jayega lly for x and z*/
+            /* transform: scaleY(1.6); */
+
+            /* is se upr aur niche se 5deg khich jayegaa */
+            /* transform: skew(5deg); */
+
+            /* iss se y  me skew ho jayega skew z me nhi kr skte*/
+            /* transform: skewY(34deg); */
+
+            /* is se 34 px translate ho jayega x me */
+            /* transform: translateX(34px); */
+
+            /* apni width k 34 percent se translate ho jaeyaga y me*/
+            /* transform: translateY(34%); */
+
+            /* for using multiple transform properties use space,transform is basically used jb hm navbar bna reh hoo */
+            /* transform: translateY(100%) skewX(40deg) translateX(-45%); */
+        }
+
+        .container {
+            width: 100vw;
+            height: 80vh;
+            border: 2px solid purple;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            box
+        </div>
+    </div>
+
+</body>
+
+</html>
