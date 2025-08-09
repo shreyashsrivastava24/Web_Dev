@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transitions</title>
+    <style>
+        .container {
+            background-color: antiquewhite;
+            height: 40vh;
+            width: 50vw;
+        }
+
+        .box {
+            background-color: aquamarine;
+            width: 5vw;
+            height: 4vh;
+
+            /*konsi wali property pe transition lgana chahta hu */
+            /* transition-property: transform; */
+
+            /* all krne se sari properties pe lg jayega */
+            /* transition-property: all; */
+
+            /* sirf two properties ka transition krna ho then , and space lgao */
+            /* transition-property: background-color, transform; */
+
+            /* kitni duration k liye transition lgana chahte ho */
+            /* transition-duration: 3s; */
+
+            /* transition kaise hoga ye is se define krte  */
+            /* transition-timing-function: ease-in-out; */
+
+            /* mai apne se v transition design kr skta hu inspect krke transition timing function me jo graph wala option hai wha se graph change krke apna fn bnao and yha chipkao */
+            /* transition-timing-function: cubic-bezier(0.8, 0.96, 0.94,-0.39); */
+
+            /* kitni der baad kam chalu hoga */
+            /* transition-delay: 1s; */
+
+            /* sari property ek sath combined */
+            transition: all 3s ease-in-out 1s;
+        }
+
+        .translate {
+            /* mai jb inspect krke trasnition class hta k enter marunga ya transsition class lga k enter marunga then output dikhega transition ka */
+            transform: translateX(10vw) translateY(10vh) scale(2);
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box translate"></div>
+    </div>
+</body>
+
+</html>
