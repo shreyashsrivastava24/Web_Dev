@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Filters</title>
+    <style>
+        img {
+            height: 400px;
+            width: 370px;
+        }
+
+        /* for more explore on ur own */
+
+        .img1 {
+            /* space lga k multiple filters lga skte */
+            /* filter: blur(8px); */
+            filter: brightness(322%) contrast(200%);
+        }
+
+        .img2 {
+            /* filter: grayscale(92%); */
+            filter: sepia(90%);
+        }
+
+        .img3 {
+            /* filter: invert(0.8); */
+            filter: opacity(0.7);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img class="img1" src="https://miro.medium.com/v2/resize:fit:1400/1*KnV1cBSw-kWyh7Y6XEEzrA.jpeg" alt="img">
+        <img class="img2" src="https://etimg.etb2bimg.com/photo/118315919.cms" alt="">
+        <img class="img3"
+            src="https://akm-img-a-in.tosshub.com/indiatoday/images/reporter/202107/ajit-doval-topic-pages-1200x768-profile_image_one_to_one.JPG?VersionId=e_qS.mUs3QJSw20FI_6jsM8z8gH03Jtv"
+            alt="">
+    </div>
+</body>
+
+</html>
