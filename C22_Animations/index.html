@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animations</title>
+    <style>
+        .container {
+            background-color: rgb(27, 193, 193);
+            height: 80vh;
+            width: 30vw;
+        }
+
+        .box {
+            width: 34px;
+            height: 45px;
+            /* background-color: aqua; */
+
+            /* animation-name: shreyashAnimation; */
+
+            /* animation ki duration */
+            /* animation-duration: 1s; */
+
+            /* animation kitni bar chlega like inifinte,2,3,etc */
+            /* animation-iteration-count: infinite; */
+
+            /* same as transition aap graph change kr  iss function ko chage kr skte */
+            /* animation-timing-function: cubic-bezier(0, 0, 0, 0, 96); */
+
+            /* page reload krne k kitni der baad chlega animation */
+            /* animation-delay: 1s; */
+
+            /* animation-direction: alternate-reverse; */
+
+            /* iss se animation ko pause kr skte animation jha pe hai jis state mai hai whi ruk jaeyga if value changed from running to paused */
+            /* animation-play-state: paused; */
+
+            /* sari properties ek saath, hum apne according lga skte kya chiye ya kya nhi chiye: 
+            animation: name duration timing-function delay iteration-count direction fill-mode; */
+            /* animation: shreyashAnimation 3s ease-in-out 2s 1; */
+
+            /* animation fill mode by default none hota so jaisa tha waisa ho jayega, animation fill mode forwards kr du to ye final css property ko retain kr lega ,isko backwards krne se isne initial styles ko retain kr liya */
+            /* animation: shreyashAnimation 3s ease-in-out 1 forwards; */
+
+            /* TO SEE AGAIN:jaise hi mai animation delay ko 3s krunga so jb tk animation delay lga hua hai tb tk phle keyframe ki properties isme aa jayengi fir wapase se purani parishthiti ho jayegi */
+
+            /* multiple animatons ko comma separated values se add kr skte */
+            animation: shreyashAnimation 3s ease-in-out 3s 1,
+                       shreyash2 3s ease-in-out 3s 1;
+        }
+
+        /* animation 1 */
+        @keyframes shreyashAnimation {
+
+            from {
+                background-color: red;
+            }
+
+            to {
+                background-color: yellow;
+                transform: translateX(1000px);
+            }
+        }
+
+         /* animation 2 */
+        @keyframes shreyash2 {
+            0% {
+                transform: rotate(100deg);
+            }
+
+            20% {
+                transform: rotate(200deg);
+            }
+
+            50% {
+                transform: rotate(220deg);
+            }
+
+            80% {
+                transform: rotate(300deg);
+            }
+
+            100% {
+                transform: rotate(310deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">Box</div>
+    </div>
+
+</body>
+
+</html>

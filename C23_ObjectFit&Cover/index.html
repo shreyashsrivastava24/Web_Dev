@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Object Fit and Position</title>
+    <style>
+        .container {
+            height: 466px;
+            width: 488px;
+            border: 2px solid black;
+            /* background-color: azure; */
+
+            /* is container pe background set kr diya */
+            background-image: url("https://i0.wp.com/picjumbo.com/wp-content/uploads/beautiful-beach-free-image-after-sunset-sky-free-photo.jpeg?w=600&quality=80");
+
+            /* background ka konsa part dikhe without image ka aspect ratio change kre hue, it controls background ka position */
+            /* background-position: top right; */
+            background-position: center center;
+
+            /* agr background image choti ho to by default repeat hoti hai image to iss se bachne k liye iska use krte */
+            background-repeat: no-repeat;
+
+            /* iss se x me repeat hogi image but y me nhi hogi lly for y */
+            /* background-repeat: repeat-x; */
+
+            /* see mdn ref for more abt background-clip,it is less used
+            background-clip: border-box; */
+        }
+
+        img {
+            height: 466px;
+            width: 488px;
+
+            /* ye sirf iski(img) height width ko cover krega such that aspect ratio maintained ho that means image cut v ho skti, isko apne parent ki height width se mtlb nhi */
+            /* object-fit ki by default value fill hoti iss se image full dikhegi but distorted */
+            /* object-fit: cover; */
+
+            /* puri image dikha do under this width and height but agr jgh bch rhi to bachne do ,aspect ratio v maintain krwana hai and pura dikhana hai to jgh to bachegi*/
+            object-fit: contain;
+
+            /* hm apne se control kr skte ki image ki konsi side cover honi chiye dikhni chiye and konsi cut honi chiye */
+            object-position: bottom right;
+            /* object-position: 10px 20px; */
+            /* object-position: 50% 50%; */
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- <img src="https://i0.wp.com/picjumbo.com/wp-content/uploads/beautiful-beach-free-image-after-sunset-sky-free-photo.jpeg?w=600&quality=80" alt="img"> -->
+    </div>
+</body>
+</html>
