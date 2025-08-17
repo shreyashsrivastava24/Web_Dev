@@ -1,0 +1,39 @@
+<!--Right click krke inspect jha v kru... $0 means selected ,if console me $0.style.backgroundColor = "green" kr du to uspe bg color green apply ho jayega -->
+
+<!-- 🌐 What is DOM in JavaScript?
+DOM = Document Object Model.
+When a webpage loads, the browser turns your HTML into a tree-like structure.
+Each part of HTML (like <h1>, <p>, <div>) becomes a node (object) in that tree.
+JavaScript can use the DOM to find, change, add, or delete these elements.
+👉 Think of DOM as a remote control for your webpage.
+
+🔧 Why DOM is Important?
+Lets JavaScript interact with the page.
+Makes pages dynamic and interactive (without reloading).
+Example: updating text, changing colors, creating new elements, handling user clicks, etc. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS DOM</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            This is a box
+        </div>
+    </div>
+    <script>
+        document.title = "Harry is good" //jaise hi js execute hogi page ka title ye ho jaeyga
+        console.log(document.title) //title dekhne ko milegi
+        console.log(document.body) //body dekhne k milegi 
+        document.body.style.backgroundColor = "green" //inline css ki mdd se bg color green 
+    </script>
+</body>
+
+</html>
