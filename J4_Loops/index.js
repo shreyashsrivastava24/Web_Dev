@@ -6,27 +6,21 @@ let a = 1;
 let obj = {
     name: "Shreyash",
     role: "Programmer",
-    company: "Self"
+    company: "Self AI"
 }
 
-//for in loop
-for (const key in obj){
-    const element = obj[key];
-    console.log(key,element)
-}
-//key element print
-
+//for in loop se key, element print
 for (const key in obj){
     const element = obj[key];
     console.log(key)
+    // console.log(key,element)
 }
-//key print
 
-//for of loop
+//for of loop , used for iterable data structure like array,string
 for(const c of"Harry"){
+    //ek ek krke sare characters print ho jayenge line by line
     console.log(c)
 }
-//sare characters print ho jayenge line by line
 
 // let i=0;
 // while(i<6){
@@ -34,7 +28,7 @@ for(const c of"Harry"){
 //     i++;
 // }
 
-//km se km ek bar run ho to iska use 
+//km se km ek bar run ho to do-while use 
 let i=10;
 do {
     console.log(i)

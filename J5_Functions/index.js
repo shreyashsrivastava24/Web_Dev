@@ -8,7 +8,7 @@ function nice(name) {
 nice("Harry")
 nice("Shreyash")
 
-// c is default parameter it is optional to pass but if a nd b not passed then NaN error
+// c is default parameter it is optional to pass but if a and b not passed then NaN error
 function sum(a,b,c=3) {
     // console.log(a+b) ...prints 8
     return a+b+c
@@ -22,9 +22,15 @@ console.log("The sum is: ", result1)
 console.log("The sum is: ", result2)
 console.log("The sum is: ", result3)
 
-//Arrow fn...is fn ko reuse kiya ja skta
+//function ko likhne ka short aur modern tarika hai
+//Arrow fn ko reuse kiya ja skta
 //variable v hai fn v hai
 //aisa krne ka fayda ye hota hai ki aap iss fn ko in turn pass kra skte ho dusre fn me
+
+// const functionName = (parameters) => {
+//     codes yha likho
+// }
+
 const func1 = (x)=>{
      console.log("I am an arrow fn",x)
 }

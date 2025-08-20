@@ -7,7 +7,7 @@ let age = 0;
 
 // console.log(age)
 // console.log(age + grace)
-// console.log(age- grace)
+// console.log(age - grace)
 // console.log(age * grace)
 // console.log(age ** grace) //Exponentiaton op
 // console.log(age / grace)
@@ -33,7 +33,7 @@ else {
     console.log("You cannot drive");
 }
 
-//js me == operator sirf value compare krta bu === type v krta....hmne terminal/repl me check kiya
+//js me == operator sirf value compare krta bu === type v krta....hmne repl me check kiya
 // "3"==3
 // true
 // "3"===3
@@ -43,4 +43,4 @@ else {
 a = 6;
 b = 8;
 let c = a>b ? (a-b) :(b-a);
-console.log(c) //o/p:2
+console.log(c) //2
