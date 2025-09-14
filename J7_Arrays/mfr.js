@@ -1,6 +1,5 @@
 let arr = [1, 13, 5, 7, 11];
 
-
 // let newArr = []
 // for (let index = 0; index < arr.length; index++) {
 //     const element = arr[index];
@@ -26,11 +25,14 @@ const greaterThanSeven = (e)=>{
 }
 console.log(arr.filter(greaterThanSeven))
 
-//reduce
+
+//reduce....phle do function se ek result dega fir uss result se next element k saath new resut dega and then continue
 let arr2 =[1,2,3,4,5,6]
 const red = (a,b) =>{
     return a+b
 }
 console.log(arr2.reduce(red)) //21
 
-//Array.from() is used to create array from any other object
+
+//Array.from("Harry") is used to create array from any object
+//(5) ['H', 'a', 'r', 'r', 'y']
