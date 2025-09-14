@@ -5,6 +5,8 @@ alert("Hello World");
 console.log("Code is running...")
 console.log("Code is also running...")
 console.log("Code is running like a wow...")
+console.log(3+4)
+console.log("3+4")
 
 // iss se alert msg k bad number puchega agr mai jo no dal du wo a me aa jayega
 var a = prompt("Enter ur number")

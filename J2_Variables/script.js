@@ -1,5 +1,7 @@
 // js automatically detects variable type
 // $ and underscore se variable name start ho skta
+//  yha v python jaise likh  dkte like x = 5 then agle line me x = raghav 
+
 // var a = 5; 
 // a = a+1; //allowed
 // var b = 6;
@@ -41,6 +43,7 @@ let z = 3.55;
 const p = true; //iski value change nhi ho skti
 let q = undefined;
 let r = null; //js null ka data type object dikhata h
+console.log(y*z)
 console.log(x, y, z, p, q, r)
 console.log(typeof x, typeof y, typeof z, typeof p, typeof q, typeof r)
 
