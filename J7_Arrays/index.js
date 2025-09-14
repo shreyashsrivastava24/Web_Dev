@@ -62,8 +62,8 @@ console.log(a1) //[1,2,3]
 // console.log(numbers) //[1,222,333,5]
 
 //slice out krta
-let num = [1,2,3,4]
-num.slice(2) //[3,4] sliced from index 2
-num.slice(1,3) //[2,3] sliced out from index 2 excluding index 3
+// let num = [1,2,3,4]
+// num.slice(2) //[3,4] sliced from index 2
+// num.slice(1,3) //[2,3] sliced out from index 2 excluding index 3
 
 //reverses the elements in source array... reverse()

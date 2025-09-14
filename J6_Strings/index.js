@@ -23,6 +23,7 @@ console.log(b.slice(1,7)) //hreyas
 console.log(b.slice(1)) //hreyash...index 1 to last
 console.log(b.replace("sh","77")) //Shreya77...agr do exactly same occurences ho to first wala replace hoga
 console.log(b.concat(a, "Yashi")) //ShreyashHarryYashi
+console.log(b.concat(a)) //ShreyashHarry
 
 //agr white space remove krni ho string se
 // let name = " harry"
@@ -30,7 +31,7 @@ console.log(b.concat(a, "Yashi")) //ShreyashHarryYashi
 
 //ek bar string bna di aur uska memory allocation ho gya to wo original string change nhi hoti (immutable)
 //above can be used to create new stirngs but original cant be changed
-console.log(b) //Shreyash
+// console.log(b) //Shreyash
 
 //Explore more on ur own
 let c = "Rohan"
