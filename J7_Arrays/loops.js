@@ -6,6 +6,7 @@ let a = [1, 93, 5, 88];
 //     console.log(element)
 // }
 
+
 //for each loop
 //prints value ,index ,array for each element
 
