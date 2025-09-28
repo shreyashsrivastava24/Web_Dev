@@ -1,5 +1,6 @@
 //solution to callback hell is promises
-//promise of code execution
+//promise is a promise of code execution
+//hmare code ka wait krta hai jb tk koi promise resolve ya reject na ho jaye
 
 console.log('This is Promises');
 
@@ -11,17 +12,20 @@ let prom1 = new Promise((resolve, reject) => {
     else {
         setTimeout(() => {
             console.log("Yes I am done")
-            resolve("Harry") //ye promise run ho chuki kam khtm iska, resolve kr do harry value k saath
+            resolve("Harry") //ye promise run ho chuki kaam khtm iska, resolve kr do harry value k saath
         }, 3000);
     }
 })
 
-//koi network req ya to reject ho skti hai ya accept ho skti hai, if accepted to aap chaoge ki uska data aa jaye so .then fn use kroge wrna .catch use kroge error handle krne  k liye 
-// prom1.then((a) => {
-//     console.log(a)
-// }).catch((err)=>{
-//     console.log(err)
-// })
+//prom1.then se promise resolve hone k baad ka code likh skte hain
+// .catch se promise reject hone k baad ka code likh skte hain
+//promise reject hone k baad console me error aa rha tha so .catch(err) use kiya to error ht gya aur uski jgh ek statement aa gyi
+//koi network req ya to reject ho skti hai ya accept ho skti hai, if accepted to aap chaoge ki uska data aa jaye so .then fn use kroge wrna .catch use kroge error handle krne k liye 
+prom1.then((a) => {
+    console.log(a)
+}).catch((err)=>{
+    console.log(err)
+})
 
 let prom2 = new Promise((resolve, reject) => {
     let a = Math.random()

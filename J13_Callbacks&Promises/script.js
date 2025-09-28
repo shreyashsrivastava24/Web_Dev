@@ -31,7 +31,6 @@ const loadScript = (src, callback) => {
     document.head.append(sc)
 }
 
-
 loadScript("https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/prism.min.js", callback )
 
 //callback k andr callback is callback hell, iss se pyramid of doom bn jata

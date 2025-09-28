@@ -19,7 +19,7 @@ button.addEventListener("contextmenu", () => {
 // e → poora event object (isme sab details hote hain)
 // e.key → key ka naam (e.g., "a", "Enter")
 // e.keyCode → key ka numeric code (e.g., A = 65, Enter = 13)
-//Console me ye 3 cheezein print hongi
+//Console me ye cheezein print hongi
 document.addEventListener("keydown", (e)=>{
     console.log(e, e.key, e.keyCode)
 })
