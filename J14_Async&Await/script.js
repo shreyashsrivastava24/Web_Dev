@@ -2,8 +2,10 @@
 // resolve means promise has settled successfully
 // reject means promise has not settled successfully
 
+// using data.then(v) where v is value is one of the approach for waiting but fir isme callback based approach lg rhi
 // use async await instead of using .then
 // async fn means ye fn background me chlte rhega
+
 // async function getData() {
 //     // Simulate getting data from a server (simulation)
 //     return new Promise((resolve, reject) => {
@@ -13,17 +15,20 @@
 //     })
 // }
 
+//ye overall fn ek promise return karega
 async function getData() {
+    // Simulate getting data from a server (actual fn)
+
     // Summary:
     // async → function promise return karega.
     // await fetch(...) → API call complete hone tak wait karega.
     // await x.json() → response ko JSON me convert karega.
     // return data → JSON object return karega.
 
-    // Simulate getting data from a server (actual fn)
-    // json placeholder se fake rest api
+    // json placeholder se free fake rest api
 
     // let x = await fetch('https://jsonplaceholder.typicode.com/todos/1')
+    
     let x = await fetch('https://jsonplaceholder.typicode.com/posts', {
         method: 'POST',
         body: JSON.stringify({

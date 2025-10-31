@@ -40,7 +40,7 @@ class animal {
 //extends animal se wo sari cheeze lion me automatically aa jayengi jo animal me hai
 class Lion extends animal {
     constructor(name) {
-        super(name) //ye keyword use krna pdega agr mai constructor change krna chahta hu
+        super(name) //ye keyword use krna pdega agr mai constructor change krna chahta hu wrna error aayegi
         this.name = name
         console.log("Object is created and he is a lion...")
     }
