@@ -48,7 +48,8 @@
 
 // Ques>Create a game where you start with any random game number.Ask the user to keep guessing he game number until the user enters correct value.
 // Note : Prompt by default string hota
-// Sol> let gameNum =25;
+//Sol> 
+// let gameNum =25;
 // let userNum = prompt("Guess the game number: ");
 
 // while(userNum != gameNum){

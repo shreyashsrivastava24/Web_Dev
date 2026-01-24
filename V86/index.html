@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+    type="module": Browser ko bata raha hai ES6 modules use kar raha hoon
+    Har file apna separate scope rakhta hai - variables global nahi hote
+    Browser order mein load karega aur import/export handle karega
+    -->
+
+    <!-- mymodule1.js load kar raha hai (main code) -->
+    <script type="module" src="mymodule1.js"></script>
+
+    <!-- testingmymodule1.js load kar raha hai (mymodule1.js ko import karta hai) -->
+    <script type="module" src="testingmymodule1.js"></script>
+</body>
+</html>

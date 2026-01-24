@@ -22,7 +22,7 @@ console.log("The sum is: ", result1)
 console.log("The sum is: ", result2)
 console.log("The sum is: ", result3)
 
-//function ko likhne ka short aur modern tarika hai
+//Arrow functions are a shorter syntax for writing functions in JavaScript, introduced in ES6.
 //Arrow fn ko reuse kiya ja skta
 //variable v hai fn v hai
 //aisa krne ka fayda ye hota hai ki aap iss fn ko in turn pass kra skte ho dusre fn me

@@ -21,9 +21,11 @@ console.log(arr.join(" and "))
 
 // last elem nikalega here 7...original array altered
 console.log(arr.pop())
+console.log(arr)
 
 //first elem nikalega
 console.log(arr.shift())
+console.log(arr)
 
 // last me add kr dega new element
 arr.push(100)

@@ -30,7 +30,7 @@ console.log(b.concat(a)) //ShreyashHarry
 // let newname = name.trim()
 
 //ek bar string bna di aur uska memory allocation ho gya to wo original string change nhi hoti (immutable)
-//above can be used to create new stirngs but original cant be changed
+//above can be used to create new strings but original cant be changed
 // console.log(b) //Shreyash
 
 //Explore more on ur own
