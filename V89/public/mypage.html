@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>testing req</title>
+  </head>
+  <body>
+    <script>
+      // async–await ka use isliye hota hai kyunki server se response aane me time lagta hai
+
+      // async  → function batata hai ki iske andar wait hoga
+      // await  → yahan JS ruk kar response ka wait karti hai
+
+      // Agar await nahi lagaya:
+      // JS wait nahi karegi
+      // Output = Promise / undefined
+      // Real data nahi milega
+
+      // Isliye:
+      // Server/API call = async + await zaroori
+
+      //similarly for delete request,post request,put request
+      async function testreq() {
+        //hit the server with a delete request
+        // Route = server ke andar ka logical address
+        // "/" = main / default route (server ka entry point)
+        // Browser jab localhost:3000 open karta hai → "/" route hit hota hai
+        // POST "/" = server ke main address par POST request bhejna
+
+        let a = await fetch("/", { method: "DELETE" });
+        //get the response text
+        let b = await a.text();
+        // print response in browser console
+        console.log(b);
+      }
+      testreq();
+    </script>
+  </body>
+</html>

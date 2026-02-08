@@ -1,0 +1,34 @@
+firstly do npm init -y
+
+then install tailwind css using npm install -D tailwindcss@3 postcss
+
+initialize tailwind css using npx tailwindcss init
+
+create input file in src folder
+
+un files ko watch kro input.css and jo maine tailwind config me content k andr hai using npx tailwindcss -i ./src/input.css -o ./src/output.css --watch
+
+watch krne k baad output file generate krega mujhe ye file bss include/link krni hai
+
+-------------------------------------------------------------------
+
+How to setup Tailwind CSS
+Step 1: Run the following commands
+
+npm install -D tailwindcss
+npx tailwindcss init
+Step 2: Update tailwind.conf.js file to include this line:
+
+content: ["*.html"],
+Step 3: create src/input.css to include:
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+Step 4: Include the src/output.css file to your html
+
+Step 5: Run the following command whenever working in tailwind such that output file update hoti rhe automatically:
+
+npx tailwindcss -i ./src/input.css -o ./src/output.css --watch
+
+Step 6: In package.json add above command as name build in scripts to avoid writing such long commands just run npm run build

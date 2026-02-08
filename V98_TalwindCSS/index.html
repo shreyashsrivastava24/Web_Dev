@@ -1,0 +1,39 @@
+<!-- Tailwind CSS lets you build consistent, responsive UIs fast without writing custom CSS or fighting naming conventions.Sirf html me rhke coding krenge ,saves time -->
+<!-- playtailwindcss website pe hm try kr skte jo v krna -->
+<!-- tailblocks.cc pe tailwind k componemts mil jate jo ki hm use kr skte-->
+<!-- tailwind is also a node js package -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="src/output.css" />
+  </head>
+  <body>
+    <!-- Tailwind CSS default breakpoints : 
+    sm: → 640px 
+    md:→ 768px 
+    lg: → 1024px 
+    xl: → 1280px 
+    2xl: → 1536px 
+    📌 Mobile-first rule 
+    Bina prefix = mobile 
+    Prefix lagaya = min-width se apply -->
+
+    <nav
+      class="bg-purple-700 text-white flex md:justify-between flex-col md:flex-row min-h-10 items-center"
+    >
+      <div class="logo mx-auto md:mx-0">CodeWithHarry</div>
+      <ul class="flex space-x-3 justify-center md:justify-normal">
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact Us</li>
+      </ul>
+    </nav>
+
+    <main></main>
+
+    <footer></footer>
+  </body>
+</html>

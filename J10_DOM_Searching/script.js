@@ -15,7 +15,7 @@ console.log("Shreyash")
 console.log(document.querySelectorAll(".box"))
 //for each loop, koi v for loop chlega
 document.querySelectorAll(".box").forEach (e=> {
-    e.style.backgroundColor = "green";
+    e.style.backgroundColor = "yellow";
 })
 
 //sare div aa jayenge ,parent div v aa jayega

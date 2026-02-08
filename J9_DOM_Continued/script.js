@@ -24,15 +24,15 @@ console.log("Hello World")
 // #text
 // cont.lastChild
 // #text
-// continue.firstElementChild // aisa phla child chiye jo ki element hai it will ignore text nodes
+// cont.firstElementChild // aisa phla child chiye jo ki element hai it will ignore text nodes
 // <div class="box">Box1</div>
 // cont.lastElementChild //lly last element child
 //<div class ="box">Box5</div>
-//continue.lastElementChild.style.color = "red" //css se red
-//continue.lastElementChild.style.color = "green" //css se green
+//cont.lastElementChild.style.color = "red" //css se red
+//cont.lastElementChild.style.color = "green" //css se green
 
 //ParentNode
-// continue.lastElementChild.parentElement
+// cont.lastElementChild.parentElement
 // <div class="container">...</div>
 
 // document.body.firstElementChild //phla aisa child jo element ho
