@@ -1,0 +1,10 @@
+/* sbke liye ek common css file bna lete hain jisme hum sabke liye common styling kr denge */
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.cards{
+display: flex; 
+/* flex-wrap: wrap; */
+}

@@ -1,0 +1,11 @@
+npx create-react-app with-react...react app bn jayegi,already an npm project
+
+npm start se server start at localhost
+
+nodemodules me sare packages ka code
+
+public me sari wo static files hain jo hum / krke prapt krte
+
+hme mainly src/app.js kyuki yha hm jo code likhenge wo hmari main app hai....app.js me special type ka syntax likhte jise jsx bola jata
+
+yha className hota kyuki js me class reserved keyword hai

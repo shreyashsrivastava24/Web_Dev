@@ -1,0 +1,8 @@
+npm create vite@latest
+
+app.jsx main aadmi hai 
+
+props k through hm data pass krte ek comp se dusre me
+
+Note: {} means js likhni but {{}} iss trh se krke hm jsx me css dalte hai (see Card.jsx)
+
