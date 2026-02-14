@@ -1,0 +1,99 @@
+import { useState } from 'react'
+import reactLogo from './assets/react.svg'
+import viteLogo from '/vite.svg'
+import './App.css'
+
+function App() {
+
+  // count ek state variable hai jisko setCount se update karte hain
+  const [count, setCount] = useState(0)
+
+  // showbtn decide karega button show hoga ya nahi
+  const [showbtn, setshowbtn] = useState(false)
+
+  // todos ek state array hai jisme multiple todo objects hain
+  const [todos, setTodos] = useState([
+    {
+      title: "Hey",
+      desc: "I am a good todo"
+    },
+    {
+      title: "Hey Another todo",
+      desc: "I am a good todo too"
+    },
+    {
+      title: "Hey I am a grocery todo",
+      desc: "I am a good todo but I am a grocery todo"
+    },
+  ])
+
+  // humne Todo naam ka ek component banaya
+  // chote components ko main component ke andar bhi bana sakte hain
+  // component bana kar list ko render kiya (Method 1)
+
+  // const Todo = ({ todo }) => {
+  //   return (
+  //     <div className="m-4 border border-1 border-purple-400">
+  //       <div className="todo">{todo.title}</div>
+  //       <div className="todo">{todo.desc}</div>
+  //     </div>
+  //   )
+  // }
+
+  return (
+    <>
+      <div>
+        <a href="https://vite.dev" target="_blank">
+          <img src={viteLogo} className="logo" alt="Vite logo" />
+        </a>
+        <a href="https://react.dev" target="_blank">
+          <img src={reactLogo} className="logo react" alt="React logo" />
+        </a>
+      </div>
+
+      <h1>Vite + React</h1>
+
+      {/* {} use kiya kyunki JSX ke andar JavaScript likh rahe hain */}
+      {/* jab showbtn true hoga tab button show hoga, warna text show hoga */}
+      {showbtn
+        ? <button>showBtn is true and button is present</button>
+        : "showbtn is false and button is not present"
+      }
+
+      {/* short circuit rendering example */}
+      {/* {showbtn && <button>showbtn is true</button>} */}
+
+      {/* React me list rendering map() se hoti hai */}
+      {todos.map(todo => {
+        // key hamesha unique honi chahiye
+        // Method 1: component use karke list render
+        // return <Todo key={todo.title} todo={todo}/>
+
+        // Method 2: direct JSX se list render
+        return (
+          <div key={todo.title} className="m-4 border border-1 border-purple-400">
+            <div className="todo">{todo.title}</div>
+            <div className="todo">{todo.desc}</div>
+          </div>
+        )
+      })}
+
+      <div className="card">
+        {/* button click hone par showbtn toggle hoga */}
+        <button onClick={() => setshowbtn(!showbtn)}>
+          Toggle showbtn
+        </button>
+
+        <p>
+          Edit <code>src/App.jsx</code> and save to test HMR
+        </p>
+      </div>
+
+      <p className="read-the-docs">
+        Click on the Vite and React logos to learn more
+      </p>
+    </>
+  )
+}
+
+export default App
