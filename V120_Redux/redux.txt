@@ -1,0 +1,9 @@
+npm install @reduxjs/toolkit react-redux
+
+create store.js in src/redux and copy_paste
+
+import store and provider in main.jsx taki puri app ko store ka access mile
+
+now create counterSlice.js in counter folder inside redux folder
+
+now import counter reducer in store.js and add reducer
