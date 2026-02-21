@@ -1,0 +1,4 @@
+Start frontend : npm run dev
+Start backend : nodemon backend/server.js
+
+Now on submitting form we will get the data object in terminal(req.body)
